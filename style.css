@@ -3,6 +3,7 @@
     margin: 0;
     scroll-behavior: smooth;
     transition: 0.3s;
+    font-family: sans-serif;
 }
 
 /* Navbar Styling */
@@ -17,6 +18,11 @@
     padding-left: 200px;
     padding-right: 200px;
     width: 100%;
+}
+
+.navbar h1 a:hover {
+    transition: 0.3s ease;
+    color:#fff;
 }
 
 .navbar h1 a{
@@ -44,7 +50,7 @@
 .navbar ul li a:hover {
     color: #fff;
     text-decoration: underline;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 
@@ -108,6 +114,7 @@
 .icons i {
     cursor: pointer;
     color: #000;
+    font-size: 30px;
 }
 
 
@@ -170,6 +177,8 @@
 .title {
     font-weight: bolder;
 }
+
+/* A Small animatoin of some section */
 
 @keyframes slideRight {
     from {
@@ -234,6 +243,44 @@
 .projects {
     background-color: #fff;
     padding: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+
+.prjt {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    background-color: #a8b9a6;
+    border-radius: 30px;
+}
+
+
+
+.prjt p, .prjt h3 {
+    padding-left: 100px;
+}
+
+.prjt img {
+    padding: 50px;
+    width: 450px;
+    height: 300px;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.aside p {
+    width: 70%;
+    color: #000;
+    font-size: larger;
 }
 
 
@@ -319,6 +366,10 @@
     padding-bottom: 30px;
 }
 
+
+
+
+
 .contactRight {
     display: flex;
     flex-direction: column;
@@ -353,6 +404,7 @@
     cursor: pointer;
 }
 
+/* Footer Styling */
 
 .footer {
     display: flex;
@@ -364,3 +416,17 @@
     background-color: #a8b9a6;
 }
 
+
+
+/* Section Titles Styling */
+
+.title {
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+/* Buttons Styling */
+
+button {
+    font-size: large;
+}
