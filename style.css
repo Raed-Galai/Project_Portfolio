@@ -70,6 +70,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-bottom: 250px;
 }
 
 .heroLeft {
@@ -77,6 +78,8 @@
     flex-direction: column;
     gap: 40px;
     width: 500px;
+    animation-name: slideRight;
+    animation-duration: 2s;
 }
 
 .heroLeft span {
@@ -103,6 +106,8 @@
     width: 500px;
     border-radius: 50%;
     padding-left: 50px;
+    animation-name: slideLeft;
+    animation-duration: 2s;
 }
 
 /* About Me Styling */
@@ -111,7 +116,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 80px 0px;
+    padding-top: 150px;
+    padding-bottom: 200px;
     gap: 20px;
 }
 
@@ -136,7 +142,7 @@
     cursor: pointer;
     background-color: #a8b9a6;
     color: #fff;
-    padding: 10px 20px;
+    padding: 20px 5px;
     border: none;
     border-radius: 50px;
     width: 40%;
@@ -157,7 +163,12 @@
     align-items: center;
     flex-direction: column;
     gap: 50px;
-    padding: 20px 0px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.services h2 {
+    padding-bottom: 50px;
 }
 
 .cards {
@@ -176,6 +187,8 @@
     border: 2px solid #a8b9a6;
     border-radius: 30px;
     padding: 10px;
+    animation-name: slideLeft;
+    animation-duration: 2s;
 }
 
 .card:hover {
@@ -186,4 +199,102 @@
 .card img{
     width: 400px;
     border-radius: 30px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.contacts {
+    display: flex;
+    gap: 100px;
+}
+
+.contactLeft {
+    background-color: #a8b9a6;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contactLeft h3 {
+    font-size: larger;
+}
+
+.contactLeft p {
+    font-size: large;
+    padding-bottom: 30px;
+}
+
+.contactRight {
+    display: flex;
+    flex-direction: column;
+    background-color: #a8b9a6;
+    padding: 20px;
+    border-radius: 30px;
+    gap: 30px;
+}
+
+.mailphone input{
+    width: 205px;
+}
+#mail {
+    width: 280px;
+}
+
+.contactRight input {
+    padding: 15px 20px;
+}
+
+.contactRight textarea {
+    width: 550px;
+    height: 150px;
+    padding: 10px;
+}
+
+.contactRight button {
+    width: 20%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: larger;
+    padding: 15px;
+    background-color: #a8b9a6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-200px);
+    }
+}
+@keyframes slideLeft {
+    from {
+        transform: translateX(200px);
+    }
 }
