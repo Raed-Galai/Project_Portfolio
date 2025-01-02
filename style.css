@@ -18,6 +18,12 @@
     width: 100%;
 }
 
+.navbar h1 a{
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}
+
 .navbar ul {
     display: flex;
 }
@@ -40,10 +46,6 @@
     transition: 0.3s;
 }
 
-.active, .btn:hover {
-    color: white;
-    text-decoration: underline;
-}
 
 .navbar button {
     padding: 10px 20px;
@@ -57,10 +59,11 @@
     color: #000;
 }
 
+
 .navbar ul li .active {
     color: #fff;
     text-decoration: underline;
-}
+} 
 
 /* Hero Styling */
 
@@ -124,6 +127,8 @@
 .about img {
     width: 500px;
     border-radius: 50%;
+    animation-name: slideLeft;
+    animation-duration: 2s;
 }
 
 .aboutRight {
@@ -131,6 +136,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    animation-name: slideRight;
+    animation-duration: 2s;
 }
 
 .aboutRight h3 {
@@ -146,6 +153,8 @@
     border: none;
     border-radius: 50px;
     width: 40%;
+    animation-name: slideRight;
+    animation-duration: 2s;
 }
 
 .aboutRight p {
@@ -163,7 +172,7 @@
     align-items: center;
     flex-direction: column;
     gap: 50px;
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 200px;
 }
 
