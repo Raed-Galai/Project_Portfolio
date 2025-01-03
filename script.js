@@ -11,4 +11,10 @@ document.querySelector("#userForm").addEventListener("submit", function (event) 
 
     // Show the values in an alert
     alert(`Name: ${name}\nEmail: ${email}\nMessage: ${message}\nPhone Number: ${number}\nSubject: ${subject}`);
+    document.querySelector("#name").value = "";
+    document.querySelector("#mail").value = "";
+    document.querySelector("#number").value = "";
+    document.querySelector("#subject").value = "";
+    document.querySelector("#message").value = "";
+
 });

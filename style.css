@@ -127,6 +127,7 @@
     border-radius: 50%;
     animation-name: slideLeft;
     animation-duration: 2s;
+    border: ;
 }
 
 .heroRight img:hover {
@@ -149,6 +150,7 @@
 
 .about img {
     width: 500px;
+    border: 10px solid #a0b39e;
     border-radius: 50%;
     animation-name: slideLeft;
     animation-duration: 2s;
@@ -156,8 +158,7 @@
 
 .about img:hover {
     box-shadow: 0 0 25px #a0b39e,
-                0 0 50px #a0b39e,
-                0 0 100px #a0b39e;
+                0 0 50px #a0b39e;
 }
 
 .aboutRight {
