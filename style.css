@@ -127,7 +127,7 @@
     border-radius: 50%;
     animation-name: slideLeft;
     animation-duration: 2s;
-    border: ;
+    border: 10px solid white;
 }
 
 .heroRight img:hover {
@@ -158,7 +158,8 @@
 
 .about img:hover {
     box-shadow: 0 0 25px #a0b39e,
-                0 0 50px #a0b39e;
+                0 0 50px #a0b39e,
+                0 0 100px #a0b39e;
 }
 
 .aboutRight {
@@ -345,7 +346,7 @@
     height: 300px;
     padding: 20px;
     background-color: #fff;
-    
+    box-shadow: 3px 3px 10px black;
 }
 
 .skill:hover {
