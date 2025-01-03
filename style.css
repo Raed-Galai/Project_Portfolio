@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-    transition: 0.3s;
+    transition: 0.3s ease;
     font-family: sans-serif;
 }
 
@@ -248,9 +248,10 @@
 }
 
 
-.card:hover {
+.card:hover, .card img:hover {
     transition: 0.5s;
     box-shadow: 0px 0px 20px #fff;
+    width: 450px;
 }
 
 .card img{
@@ -296,6 +297,11 @@
     height: 300px;
 }
 
+.prjt img:hover {
+    width: 500px;
+    height: 350px;
+}
+
 .aside {
     display: flex;
     flex-direction: column;
@@ -325,7 +331,7 @@
 .skll {
     display: flex;
     gap: 50px;
-    padding-left: 200px;
+    /* padding-left: 200px; */
 }
 
 .skill {
@@ -334,7 +340,8 @@
     align-items: center;
     gap: 30px;
     border-radius: 30px;
-    width: 25%;
+    width: 350px;
+    height: 300px;
     padding: 20px;
     background-color: #fff;
     
@@ -343,6 +350,8 @@
 .skill:hover {
     box-shadow: 2px 2px 10px #fff;
     transition: 0.3s ease;
+    width: 400px;
+    height: 350px;
 }
 
 #js {
